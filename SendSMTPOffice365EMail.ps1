@@ -26,7 +26,7 @@ function encryptPassword{
 
 function decryptPassword{
     #Reads the first line of the encrypted file.
-    $Encodeduser = Get-Content -Path "C:\Pass.txt" | select -Index 0
+    $EncodedPass = Get-Content -Path "C:\Pass.txt" | select -Index 0
 
     #Decryptes the line.
     $DecodedPass = [System.Text.Encoding]::Unicode.GetString([System.Convert]::FromBase64String($EncodedPass))
