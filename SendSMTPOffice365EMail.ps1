@@ -53,7 +53,7 @@ function send0365Mail{
     $credentials = New-Object System.Management.Automation.Pscredential -Argumentlist $login,$password
     try{
         #Sends the email.
-        Send-MailMessage -Credential $credentials –From joe.richards@theregisschool.co.uk –To joe.richards@theregisschool.co.uk –Subject “Test Email” –Body “Test” -SmtpServer smtp.office365.com -Port 587 -UseSsl
+        Send-MailMessage -Credential $credentials –From email@domain.com –To email@domain.com –Subject “Subject” –Body “Body” -SmtpServer smtp.office365.com -Port 587 -UseSsl
         Write-Host "Message Sent."
     }
     catch{
