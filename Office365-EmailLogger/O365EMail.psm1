@@ -4,9 +4,9 @@
 .DESCRIPTION
    There is three functions for this module, encryptPassword, decryptPassword and send0365Mail.
    This module sends Office365 Emails and the Logger.ps1 script changes the body content of the email.
-.PARAMETER $credPass
+.PARAMETER credPass
     Stores the Authentication Password for Office365 if C:\Pass.txt doesnt exist, it also encodes it to base64.
-.PARAMETER $login
+.PARAMETER login
     Stores the username Authentication for Office365, this will need to be changed to suite you.
 .PARAMETER Send-MailMessage
     There has to be a few changes here;
