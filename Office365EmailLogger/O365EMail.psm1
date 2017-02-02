@@ -7,7 +7,7 @@
    - The SendO354Mail function retrives the files which were created with StoreCreds function and sends the Email to Office365 email address.
    - Nothing has to be changed for this to work except under Send-MailMessage, the -To and the -From.
 .Notes
-   Joe RIchards
+   Author: Joe RIchards
    Date: 02/Feb/2017
 .LINK
   https://github.com/joer89/Logging
