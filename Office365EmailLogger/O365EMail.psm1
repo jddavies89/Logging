@@ -30,7 +30,7 @@ function StoreCreds{
    
 }#end function.
 
-#Decodes the password stored in pass.txt, uses the password for authentication to Office365 and sends the message.
+#Reads the User and Password text files for authentication to Office365 and sends the message.
 function send0365Mail{
 
         #Checks to see if both the user and password files are there.
