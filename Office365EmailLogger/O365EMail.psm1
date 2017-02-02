@@ -11,7 +11,6 @@
    Date: 02/Feb/2017
 .LINK
   https://github.com/joer89/Logging
-  
 #>
 
 #Checks to see if the file exists if not it prompts for the password and creates a file with the encrypted password.
