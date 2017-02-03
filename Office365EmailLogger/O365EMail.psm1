@@ -13,6 +13,22 @@
   https://github.com/joer89/Logging
 #>
 
+#Checks the last creation time of the folder, this is so we dont get authentication issue over 24 hours.
+function checkFolder{
+
+    #Check the accessed time on the folder.
+    $lastwritetime = (Get-Item "C:\O365").LastAccessTime
+    #Adds one day.
+    $timeSpan = New-TimeSpan -Day 1
+    #Gets the current time.
+    $currentTime = Get-Date
+    
+    #If the date is within the last day of the creation time of the folder sends the email otherwise prompts for the credentials.
+    if(!($currentTime -le ($lastwritetime + $timeSpan))){
+        StoreCreds
+    }
+}
+
 #Checks to see if the file exists if not it prompts for the password and creates a file with the encrypted password.
 function StoreCreds{
 
@@ -35,6 +51,9 @@ function StoreCreds{
 
 #Reads the User and Password text files for authentication to Office365 and sends the message.
 function send0365Mail{
+
+       #Checks the creation time of the O365 folder, this is to prevent the authentication issue within 24 hours.
+       checkFolder
 
         #Checks to see if both the user and password files are there.
        if((Test-Path -LiteralPath "C:\O365\O365User.txt") -and (Test-Path -LiteralPath "C:\O365\O365Pass.txt")){ 
