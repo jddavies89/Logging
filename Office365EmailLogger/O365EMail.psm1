@@ -13,7 +13,7 @@
   https://github.com/joer89/Logging
 #>
 
-#Checks the last creation time of the folder, this is so we dont get authentication issue over 24 hours.
+#Checks the last access time of the folder, this is so we dont get authentication issue over 24 hours.
 function checkFolder{
 
     #Check the accessed time on the folder.
