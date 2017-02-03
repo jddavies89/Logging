@@ -4,7 +4,7 @@
 .DESCRIPTION
    - There is two functions for this module, StoreCred and send0365Mail.
    - The StoreCreds checks to see if the folder and files exist for authenticating to Office365 and if it doesnt exist, then stores the credentials to C:\o365\.
-   - The SendO354Mail function retrives the files which were created with StoreCreds function and sends the Email to Office365 email address.
+   - The SendO354Mail function retrieves the files which were created with StoreCreds function and sends the Email to Office365 email address.
    - Nothing has to be changed for this to work except under Send-MailMessage, the -To and the -From.
 .Notes
    Author: Joe Richards
