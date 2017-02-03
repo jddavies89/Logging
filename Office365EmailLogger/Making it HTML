@@ -7,7 +7,7 @@ Add -BodyAsHtml under Send-MailMessage.
 #Current logged on user.
 $Admin = Get-WMIObject -class Win32_ComputerSystem | select username
 
-#The body of the email html email is below.
+#The body of the html email is below.
  $body = "
 <html><head><title></title></head>
 <body>
