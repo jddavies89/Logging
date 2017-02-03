@@ -1,0 +1,41 @@
+You can also create a html email quite easily.
+If you want to implement this within creating Active Directory Users you can so by doing something similar to the below.
+
+Add -BodyAsHtml under Send-MailMessage.
+
+#Current logged on user.
+$Admin = Get-WMIObject -class Win32_ComputerSystem | select username
+
+#The body of the email html email is below.
+ $body = "
+<html><head><title></title></head>
+<body>
+<H1>New account created at $(Get-Date -format "dd-MMM-yyyy HH:mm").</H1>
+<br />
+<h3>Creator is $Admin</h3>
+<br /
+><br />Username is $Username.
+<br />
+Fullname is $firstn $surname.
+<br />
+Display name is $DisplayName.
+<br />
+The SamAccountName is $samacctname.
+<br />
+The UserPrincipalName is $userPrincipal.
+<br />
+ChangePasswordAtLogon is true.
+<br />
+Account Enabled is true.
+<br />
+Description is $Description.
+<br />
+Profile path is $ppath.
+<br />
+homeDirectory is $HomeDirectory.
+<br />
+Department is $dept.
+<br />
+The HomeDrive is $homeDri.</p>
+</body>"
+
