@@ -3,7 +3,7 @@
    This Module sends Office365 emails for logging.
 .DESCRIPTION
    - There is three functions for this module, checkFolder, StoreCred and send0365Mail.
-   - checkFolder function checks the last time the C:\O365 folder as been accessed and if its over a day old, the SoreCred function takes over.
+   - checkFolder function checks the last time the C:\O365 folder as been accessed and if its over a day old, the StoreCred function takes over.
    - The StoreCreds checks to see if the folder and files exist for authenticating to Office365 and if it doesnt exist, then stores the credentials to C:\o365\.
    - The SendO354Mail function retrieves the files which were created with StoreCreds function and sends the Email to Office365 email address.
    - Nothing has to be changed for this to work except under Send-MailMessage, the -To and the -From.
