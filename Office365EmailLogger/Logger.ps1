@@ -14,7 +14,6 @@ function ImpModule{
 #Imports the office365 logger module from ImpModule function.
 ImpModule
 
-
 #Stores the body content of the emails.
 $body = "This script started at $(Get-Date -format "dd-MMM-yyyy HH:mm")"
 
