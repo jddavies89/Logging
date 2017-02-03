@@ -1,6 +1,7 @@
 You can also create a html email quite easily.
 If you want to implement this within creating Active Directory Users you can so by doing something similar to the below.
 
+
 Add -BodyAsHtml under Send-MailMessage.
 
 #Current logged on user.
