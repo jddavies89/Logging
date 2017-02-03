@@ -40,7 +40,7 @@ function StoreCreds{
                 New-Item -Path "C:\" -Name "O365" -ItemType directory
             }
             #Gets the credentials.
-            $Credentials = Get-Credential 
+            $Credentials = Get-Credential -Message "Office 365 Authentication for SMTP."
             #Stores the office365 credentials to a text file.
             $Credentials.UserName | Set-Content "C:\O365\O365User.txt"
             #Stores the office365 credentials to a text file.
