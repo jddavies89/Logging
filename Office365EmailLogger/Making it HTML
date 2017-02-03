@@ -13,8 +13,9 @@ $Admin = Get-WMIObject -class Win32_ComputerSystem | select username
 <H1>New account created at $(Get-Date -format "dd-MMM-yyyy HH:mm").</H1>
 <br />
 <h3>Creator is $Admin</h3>
-<br /
-><br />Username is $Username.
+<br />
+<br />
+Username is $Username.
 <br />
 Fullname is $firstn $surname.
 <br />
