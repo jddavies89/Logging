@@ -16,10 +16,6 @@
 .LINK
   https://github.com/joer89/Logging
 #>
-############################################################
-##
-##Author by Joe Richards
-##
  
 
 #Stores the log file details.
