@@ -17,7 +17,6 @@
   https://github.com/joer89/Logging
 #>
  
-
 #Stores the log file details.
 param(
     #Storesd the executional path.
