@@ -29,6 +29,7 @@
   https://github.com/joer89/Logging
 #>
 
+
 function Log-ToFile {
 
 [CmdletBinding(SupportsShouldProcess=$true)]        
