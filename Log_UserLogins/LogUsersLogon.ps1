@@ -29,7 +29,7 @@ function logUser_Logon{
 
 }#End Function.
 
-#Stops truncation error messages (When the WMI Query length exceeds the SQL cell length.)
+#Stops truncation error messages (When the Query length exceeds the SQL cell length.)
 function checkVarLength{
 
     #Replaces all the spaces which may occure during the WMI retrieval.
@@ -60,7 +60,6 @@ function connectReadEditSQL{
     $cmd.ExecuteNonQuery()
     $conn.Close()
 }#end function.
-
 
 cls
 #Runs the functions.
