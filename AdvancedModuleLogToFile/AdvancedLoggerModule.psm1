@@ -1,6 +1,6 @@
 ﻿<#
 .Synopsis
-   This is an advanced function logging module that logs to a log file in the working directory.
+   This is an advanced function logging module that logs to a log file of the location specified by the user.
 .DESCRIPTION
     See logger.ps1 on how to implement this advanced function module.
 .PARAMETER Path
