@@ -2,7 +2,7 @@
 .Synopsis
    This is an advanced function logging module that logs to a log file in the working directory.
 .DESCRIPTION
-    You can log several 
+    See logger.ps1 on how to implement this advanced function module.
 .PARAMETER Path
     The directory of where the log file is located.
 .PARAMTER fileName
