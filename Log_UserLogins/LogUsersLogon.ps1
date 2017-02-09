@@ -46,7 +46,7 @@ function checkVarLength{
     }
 }#end function.
 
-#Connect, reads and updates the SQL database.
+#Connect and insert data to the SQL database.
 function connectReadEditSQL{
     #Creates the connection to SQL.
     $conn = New-Object System.Data.SqlClient.SqlConnection
