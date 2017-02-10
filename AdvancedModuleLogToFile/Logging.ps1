@@ -1,5 +1,5 @@
 ﻿#Start function
-#Imports the log.psm1 module.
+#Imports the module.
 function importModule{
     #Start the try catch statement to load the module log.psm1.
     try{  
