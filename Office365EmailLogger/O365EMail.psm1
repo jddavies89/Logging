@@ -22,8 +22,7 @@ function checkFolder{
     #Adds one day.
     $timeSpan = New-TimeSpan -Day 1
     #Gets the current time.
-    $currentTime = Get-Date
-    
+    $currentTime = Get-Date    
     #If the date is within the last day of the creation time of the folder sends the email otherwise prompts for the credentials.
     if(!($currentTime -le ($LastAccessTime + $timeSpan))){
         StoreCreds
