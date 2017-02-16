@@ -10,7 +10,6 @@ function ImpModule{
     Import-Module  $path\O365EMail.psm1
 }#end function.
 
-
 #Imports the office365 logger module from ImpModule function.
 ImpModule
 
