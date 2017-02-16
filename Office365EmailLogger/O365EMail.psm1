@@ -41,7 +41,7 @@ function StoreCreds{
                 New-Item -Path "C:\" -Name "O365" -ItemType directory
             }
             #Gets the credentials.
-            $Credentials = Get-Credential -Message "Office 365 Authentication for SMTP."
+            $Credentials = Get-Credential -Message "Office 365 Authentication for SMTP & the sender."
             #Stores the office365 credentials to a text file.
             $Credentials.UserName | Set-Content "C:\O365\O365User.txt"
             #Stores the office365 credentials to a text file.
@@ -68,7 +68,7 @@ function send0365Mail{
                     
             try{
                 #Sends the email.
-                Send-MailMessage -Credential $credential –From user@Office365domain.com –To user@Office365domain.com –Subject “Test Email” –Body $body -SmtpServer smtp.office365.com -Port 587 -UseSsl
+                Send-MailMessage -Credential $credential –From $User –To user@Office365domain.com –Subject “Test Email” –Body $body -SmtpServer smtp.office365.com -Port 587 -UseSsl
                 #Writes out to the screen.
                 Write-Host "Message Sent."
             }
