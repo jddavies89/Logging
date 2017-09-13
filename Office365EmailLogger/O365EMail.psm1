@@ -11,7 +11,7 @@
    Author: Joe Richards
    Date: 02/Feb/2017
 .LINK
-  https://github.com/joer89/Logging
+  https://github.com/joer89/Logging.git
 #>
 
 #Checks the last access time of the folder, this is so we dont get authentication issue over 24 hours.
