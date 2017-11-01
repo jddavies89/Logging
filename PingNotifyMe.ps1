@@ -135,4 +135,4 @@ function PingNotifyMe{
         Process{}
         End{}
 }
-#ping -Path 'Q:\DOCUMENTATION\Digital Signage\Screen IP Address.csv'
+#PingNotifyMe -ICMP -Path C:\IPAddr.csv
