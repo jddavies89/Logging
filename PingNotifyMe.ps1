@@ -11,10 +11,10 @@
         PCModel
 
 .EXAMPLE
-    Ping_IPs -ICMP -Path 'C:\IP Address.csv'
+     PingNotifyMe -ICMP -Path 'C:\IP Address.csv'
         Reads from the csv file and tries to ping each ip address with an ICMP ping scan.
 .EXAMPLE
-    Ping_IPs -TCPConnect -Path C:\IP Address.csv'
+    PingNotifyMe -TCPConnect -Path C:\IP Address.csv'
         Reads from the csv file and tries to ping each ip address with a TCP COnnect scan.
 .PARAMETER ICMP
     uses ICMP echo reply to ping the node.
